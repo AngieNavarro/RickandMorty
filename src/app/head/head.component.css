@@ -30,10 +30,22 @@
 a {
   text-decoration: none;
   font-size: 20px;
+  color: black;
+    border-radius: 20px ;
+
 }
+a:hover{
+  background-color: lightblue;
+  color: white;
+  border-radius: 20px ;
+  width: 120px;
+  height: 80px;
+  align-content: center;
+  text-align: center;
+}
+
 li {
   margin-left: 70px;
-  margin-right:70px;
 }
 @media screen and (max-width: 650px) {
 
