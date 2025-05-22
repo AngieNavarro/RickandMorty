@@ -21,3 +21,11 @@ small{
   text-align: end;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+@media screen and (max-width: 650px) {
+  .container{
+    margin-top: 10px;
+  }
+  small{
+    margin-right: 50px;
+  }
+}

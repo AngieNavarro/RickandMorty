@@ -1,7 +1,6 @@
-.navbar{
-    border-block: solid;
+.navbar {
+  border-block: solid;
   writing-mode: horizontal-tb;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +8,7 @@
   z-index: 1000;
   background-color: white;
   color: black;
-  padding: 10px 20px
+  padding: 10px 20px;
 }
 a {
   text-decoration: none;
@@ -40,7 +39,7 @@ li {
   margin-right: 70px;
 }
 
-.images img{
+.images img {
   max-width: 100%;
   height: auto;
 }
@@ -50,10 +49,10 @@ li {
     align-content: center;
     text-align: center;
   }
-  .images{
-   text-align: center;
+  .images {
+    text-align: center;
   }
-  img{
+  img {
     width: 100px;
     height: 100px;
   }
