@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { personaje } from '../interfaces/personaje.mode';
 
 @Component({
   selector: 'app-persona',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './persona.component.css'
 })
 export class PersonaComponent {
+
+  @Input({required:true}) persona!:personaje;
+  @Input({required:true}) indice:number=0;
+
 
 }

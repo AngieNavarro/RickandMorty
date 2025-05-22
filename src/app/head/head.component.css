@@ -1,52 +1,67 @@
-.content {
-  width: 100%;
-  height: 160px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: white;
-  position: fixed;
-   border-block: solid;
+.navbar{
+    border-block: solid;
   writing-mode: horizontal-tb;
+
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1000;
+  background-color: white;
+  color: black;
+  padding: 10px 20px
 }
-
-.logo {
-  align-content: center;
-   /* border-block: solid;
-  writing-mode: horizontal-tb; */
-}
- .images{
-  margin-left: 280px;
-}
-.menu {
-  width: auto;
-  align-content: center;
-  /* border-block: solid;
-  writing-mode: horizontal-tb; */
-}
-
 a {
   text-decoration: none;
   font-size: 20px;
   color: black;
-    border-radius: 20px ;
-
+  border-radius: 20px;
 }
-a:hover{
-  background-color: lightblue;
-  color: white;
-  border-radius: 20px ;
-  width: 120px;
+a {
+  border-radius: 20px;
+  width: 130px;
   height: 80px;
   align-content: center;
   text-align: center;
 }
+a:hover {
+  background-color: lightblue;
+  color: white;
+  border-radius: 20px;
+  width: 130px;
+  height: 80px;
+  align-content: center;
+  text-align: center;
+  cursor: grab;
+}
 
 li {
   margin-left: 70px;
+  margin-right: 70px;
 }
-@media screen and (max-width: 650px) {
 
+.images img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  a {
+    align-content: center;
+    text-align: center;
+  }
+  .images{
+   text-align: center;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  /* a:hover {
+    background-color: inherit;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    color: black;
+  } */
 }

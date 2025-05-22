@@ -1,1 +1,9 @@
-<p>personajes works!</p>
+<app-head></app-head>
+<div class="content">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let item of listaPersonajes(); let i=index">
+      <app-persona [persona]="item" [indice]="i"></app-persona>
+    </div>
+  </div>
+</div>
+<app-foot></app-foot>

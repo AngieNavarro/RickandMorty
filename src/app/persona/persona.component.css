@@ -1,0 +1,33 @@
+li {
+  list-style: none;
+}
+ul {
+  text-align: left;
+  padding: 0;
+}
+.card {
+  text-align: left;
+}
+span {
+  position: absolute;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-color: red;
+  border-style: groove;
+  border-radius: 35px;
+  text-align: center;
+  align-content: center;
+  top: 10px;
+  right: 10px;
+}
+.card-title {
+  width: 180px;
+}
+@media screen and (max-width: 650px) {
+  span {
+    background-color: black;
+    border-color: black;
+    color: red;
+  }
+}
