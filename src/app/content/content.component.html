@@ -1,0 +1,203 @@
+<div class="principal">
+  <app-head></app-head>
+  <div class="container">
+    <h1>Historia de {{rick()?.name}}</h1>
+    <br>
+    <div class="centro">
+
+      <img [src]="rick()?.image" alt="Rick">
+      <h5>{{rick()?.name}}</h5>
+
+    </div>
+
+    <p>
+      Rick es un brillante científico un tanto borracho que secuestra a su nieto Morty para tener aventuras en otros
+      mundos y en dimensiones alternativas. Rick Sánchez de la dimensión de la Tierra C-137 es el padre de Beth Smith, y
+      el abuelo de Morty Smith y Summer Smith. Se dice que estuvo alejado de su familia durante demasiados años antes de
+      los acontecimientos del programa. Viaja frecuentemente en aventuras por el espacio y otros planetas y dimensiones
+      con su nieto Morty. En la tercera temporada se revela que tiene más de 60 años. Rick es retratado como un
+      científico loco; utilizando su destreza matemática y científica junto con apatía y cinismo egoísta, emerge a salvo
+      de cualquier situación, sin importar las consecuencias de su autopreservación. Rick también, en algunos episodios,
+      trata desesperadamente de recuperar a su familia después de perder su confianza. Los creadores querían que
+      pareciera que tiene el control estratégicamente, pero no en absoluto cuando se trataba de asuntos personales.
+
+    </p>
+
+    <hr>
+    <h1>Información de {{rick()?.name}}:</h1>
+    <ul>
+      <li>{{rick()?.gender}}</li>
+      <li>{{rick()?.species}}</li>
+      <li>{{rick()?.status}}</li>
+      <li>{{rick()?.origin?.name}}</li>
+      <li>{{rick()?.location?.name}}</li>
+    </ul>
+
+    <h2>Personalidad</h2>
+    <p> En el piloto se revela que Rick es ateo, mientras le dice a Summer que «no hay Dios».Harmon ha dicho que
+      «anarquista» es un descriptor ideológico cercano a Rick. En «The Rickshank Redemption» Rick profesa su anhelo por
+      la
+      salsa Szechuan que una vez estuvo disponible en McDonald's como artículo promocional de la película Mulan de 1998.
+
+      Justin Roiland, uno de los creadores y productores ejecutivos del programa, ha declarado que Rick es
+      pansexual.
+      Esto se mostró en «Auto Erotic Assimilation», cuando Rick se conecta con Unity, una examante que es una mente
+      colectiva de individuos del planeta que ocupan. Unity mencionó no saber a donde estaban 'los mineros' con quienes
+      estaba Rick, demostrando su implícita inclinación hacia el sexo masculino (aunque el personaje se demuestre como
+      heterosexual en la mayoría de ocasiones).</p>
+    <hr>
+    <h1>Familia Smith</h1>
+    <div class="card-group">
+      <div class="card">
+        <img [src]="morty()?.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{morty()?.name}}</h5>
+          <ul>
+            <li>{{morty()?.gender}}</li>
+            <li>{{morty()?.species}}</li>
+            <li>{{morty()?.status}}</li>
+            <li>{{morty()?.origin?.name}}</li>
+            <li>{{morty()?.location?.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img [src]="summer()?.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{summer()?.name}}</h5>
+          <ul>
+            <li>{{summer()?.gender}}</li>
+            <li>{{summer()?.species}}</li>
+            <li>{{summer()?.status}}</li>
+            <li>{{summer()?.origin?.name}}</li>
+            <li>{{summer()?.location?.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img [src]="beth()?.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{beth()?.name}}</h5>
+          <ul>
+            <li>{{beth()?.gender}}</li>
+            <li>{{beth()?.species}}</li>
+            <li>{{beth()?.status}}</li>
+            <li>{{beth()?.origin?.name}}</li>
+            <li>{{beth()?.location?.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img [src]="jerry()?.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{jerry()?.name}}</h5>
+          <ul>
+            <li>{{jerry()?.gender}}</li>
+            <li>{{jerry()?.species}}</li>
+            <li>{{jerry()?.status}}</li>
+            <li>{{jerry()?.origin?.name}}</li>
+            <li>{{jerry()?.location?.name}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <h1>Aventuras</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="morty.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="baño.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="hachi.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="nietos.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="minmundos.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="serpientes.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="rick-y-morty.avif" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia, nihil ducimus rerum libero autem? Odit,
+      reiciendis distinctio! Reprehenderit alias saepe obcaecati sunt delectus dolore quae dolorem reiciendis.
+      Laboriosam, voluptatem?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore non voluptatum a tempore maxime minima fugiat
+      molestias, deserunt explicabo fugit distinctio eius sunt facere dolores aliquam laudantium aliquid tenetur
+      doloremque.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia explicabo asperiores corrupti fuga sed a
+      reprehenderit ab ipsa magnam! Temporibus cupiditate nesciunt recusandae totam commodi exercitationem eos
+      perspiciatis laboriosam vero.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, similique magnam! Numquam qui, magni sequi nulla
+      dolorum hic, voluptatibus molestiae corporis natus quis fugiat consequuntur unde quod porro alias saepe.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt asperiores vel repellat! Accusamus unde
+      quibusdam amet commodi eveniet modi molestias ex, quidem nobis, dignissimos quaerat delectus! Ducimus, adipisci
+      similique.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni accusamus, incidunt culpa similique doloribus
+      impedit voluptas, mollitia cum neque nemo accusantium fugit enim eveniet, maxime quae. Eligendi culpa est tenetur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error dolorum repellendus nam et aspernatur eaque
+      laboriosam voluptatum, corporis eius culpa maxime similique illo modi maiores ab praesentium ipsa nostrum!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, beatae! Voluptates, illum ut, consequuntur
+      doloribus, explicabo quisquam esse dolore dolorum quam quaerat voluptas rerum tempore modi autem natus asperiores.
+      Voluptas.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis quis excepturi reprehenderit.
+      Necessitatibus voluptatum et eaque officiis, inventore, dolorum quisquam dolore, beatae soluta blanditiis quae
+      exercitationem amet voluptates laudantium.
+
+    </p>
+    <br>
+    <h1>Piloto</h1>
+    <div class="videosric">
+      <video controls width="800px" height="400px" src="piloto_rick.mp4" type="video/mp4"></video>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iure modi sequi voluptatem nulla repudiandae
+      temporibus neque quaerat amet eaque. Quod a quas impedit possimus atque officia eos perspiciatis alias.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam, et eius placeat impedit necessitatibus,
+      magnam voluptatibus, nihil id debitis enim nam sapiente quod sed voluptatem possimus. Eum, ad cupiditate!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus, deserunt deleniti quidem
+      consequatur a aliquid nesciunt atque eveniet perspiciatis doloribus velit distinctio, in, reprehenderit architecto
+      fuga consectetur et corporis!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint omnis eos vel dolorum, cupiditate nobis ut nam
+      praesentium odio dolor ipsa possimus tempora fuga quo quia magnam voluptatum, corrupti voluptatibus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum cumque sequi eaque odit quidem tenetur alias qui
+      nostrum soluta omnis. Pariatur esse earum, doloribus vitae numquam magnam repellendus temporibus quidem?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident beatae earum, expedita cumque ipsum reiciendis
+      minima, alias sapiente, magnam ut adipisci culpa dignissimos sequi! Animi ad fuga ut dignissimos eaque?
+      leak_remove
+    </p>
+    <br>
+  </div>
+
+  <app-foot></app-foot>
+</div>

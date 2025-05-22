@@ -1,0 +1,27 @@
+.principal{
+display: grid;
+min-height: 100dvh;
+grid-template-rows: auto 1fr auto;
+}
+.container{
+  margin-top: 200px;
+    font-size:20px;
+
+}
+.centro{
+  text-align: center;
+}
+p{
+  text-align: justify;
+}
+img{
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  width: 60px;
+  height: 60px;
+}
+.videosric{
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+footer{
+  background-color: white;
+  height: 160px;
+  border-block:solid;
+  writing-mode: horizontal-tb;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: end;
+}
+.logo{
+ width: 150px;
+ height: 150px;
+}
+small{
+  font-style: oblique;
+  margin-top: 40px;
+  text-align: end;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
