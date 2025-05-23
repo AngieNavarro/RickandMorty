@@ -21,5 +21,9 @@ export class PersonajeService {
     return this.http.get<personaje>(`https://rickandmortyapi.com/api/character/${id}`)
   }
 
+  getOneCadenaPersonaje(cadena:string){
+    return this.http.get<personaje>(cadena);
+  }
+
 
 }

@@ -1,1 +1,14 @@
-<p>mundos works!</p>
+<app-head></app-head>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-1">
+    <div class="accordion" id="accordionExample">
+      <div class="col"
+        *ngFor="let item of locaciones() | paginate:{ id:'pagina-mundos', itemsPerPage:5, currentPage:paginamundos} ; let ind=index ">
+        <app-mundo [mundo]="item" [conta]="ind"></app-mundo>
+      </div>
+      <br>
+        <pagination-controls id="pagina-mundos" (pageChange)="paginamundos=$event"></pagination-controls>
+    </div>
+  </div>
+</div>
+<app-foot></app-foot>
