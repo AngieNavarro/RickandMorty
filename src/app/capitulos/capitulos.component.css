@@ -1,0 +1,31 @@
+.container {
+  margin-top: 230px;
+  margin-bottom: 200px;
+}
+.row {
+  margin: 20px;
+}
+label {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+#btontemporada {
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+}
+#btonpersonajes {
+  background-color: lightblue;
+  border-color: lightblue;
+  color: black;
+}
+.progress{
+  height: 30px;
+}
+
+.mi-barra {
+  background-color: lightblue;
+    color: black;
+font-size: 20px;
+}
