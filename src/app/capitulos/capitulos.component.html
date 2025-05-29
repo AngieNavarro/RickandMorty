@@ -2,40 +2,36 @@
 <div class="container">
   <div class="dropdown">
     <label for="text">SELECCIONE UNA TEMPORADA </label>
-    <button id="btontemporada" class="btn btn-secondary dropdown-toggle" t
-    ype="button" data-bs-toggle="dropdown" aria-expanded="false">
-      {{temporada}}
+    <button id="btontemporada" class="btn btn-secondary dropdown-toggle" t ype="button" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      {{temporadatitulo}}
     </button>
     <ul class="dropdown-menu">
       <li *ngFor="let item of unicos"><a class="dropdown-item" (click)="getExT(item)">{{temporada + ' '+ item}}</a></li>
     </ul>
-
-
 
     <div *ngFor="let item of episodes_filtrados();">
       <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">{{item.episode}}</h5>
+              <h5 class="card-title">
+                Temporada {{item.episode.substring(1,3)}} - Capitulo {{item.episode.substring(4,6)}}
+              </h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">{{item.air_date}}</h6>
               <p class="card-text">{{item.name}}</p>
               <p>
-                <button (click)="personajesxcap(item.characters,item.id)"
-                  class="btn btn-primary"
-                  type="button"
+                <button (click)="personajesxcap(item.characters,item.id)" class="btn btn-primary" type="button"
                   data-bs-toggle="collapse" aria-expanded="false"
                   [attr.data-bs-target]="'#collapseWidthExample'+item.id"
-                  [attr.aria-controls]="'collapseWidthExample'+item.id"
-                  id="btonpersonajes"
-                  >
+                  [attr.aria-controls]="'collapseWidthExample'+item.id" id="btonpersonajes">
                   personajes del capitulo
 
                 </button>
               </p>
 
               <!-- Contenedor de la barra de progreso -->
-              <div  *ngIf="progreso[item.id]" class="progress mb-3" role="progressbar" aria-label="Carga de imágenes"
+              <div *ngIf="cargando[item.id]" class="progress mb-3" role="progressbar" aria-label="Carga de imágenes"
                 [attr.aria-valuenow]="progreso[item.id]" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar mi-barra" [style.width.%]="progreso[item.id]">
                   {{progreso[item.id]}}%
@@ -44,8 +40,10 @@
 
               <div class="collapse" [id]="'collapseWidthExample'+item.id">
                 <div *ngIf="visible[item.id]">
+                  <p>Cantidad de personajes en el capitulo: {{item.characters.length}}</p>
                   <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col" *ngFor="let img of imagenesxitem[item.id]|slice:0:10">
+
                       <img [src]="img" alt="" width="100%">
                     </div>
                   </div>
